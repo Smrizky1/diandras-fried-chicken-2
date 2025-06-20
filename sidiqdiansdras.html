@@ -1,0 +1,215 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diandra's Fried Chicken</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    nav {
+      background-color: #d84315;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo {
+      font-size: 1.8rem;
+      color: #fff;
+      font-family: 'Brush Script MT', cursive;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1604908177525-30d48470c7f1?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2.5rem;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #d84315;
+      font-size: 2rem;
+    }
+    .sejarah p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .menu-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: scale(1.02);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .menu-info {
+      padding: 15px;
+    }
+    .menu-info h3 {
+      color: #b71c1c;
+      margin-bottom: 10px;
+    }
+    .menu-info p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .menu-info .harga {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #d84315;
+    }
+    .kontak {
+      background: #d84315;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 20px;
+    }
+    .kontak a {
+      color: #fff;
+      background: #bf360c;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #fce9e0;
+      color: #7a4a42;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.8rem;
+        height: 300px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Diandra's Fried Chicken</div>
+    <ul>
+      <li><a href="#sejarah">Sejarah</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    Cita Rasa Ayam Goreng Terbaik dari Diandra's Fried Chicken
+  </header>
+
+  <section id="sejarah" class="sejarah">
+    <h2>Sejarah Kami</h2>
+    <p>
+      Diandra's Fried Chicken didirikan pada tahun 2020 di kota Bandung dengan visi menghadirkan ayam goreng berkualitas tinggi yang lezat dan terjangkau untuk semua kalangan. Berawal dari resep keluarga turun-temurun, Diandra menciptakan bumbu rahasia yang menghasilkan rasa ayam yang gurih, renyah, dan khas.
+      <br><br>
+      Dengan semangat kewirausahaan dan dedikasi terhadap kualitas, Diandra's Fried Chicken berkembang dari gerobak kecil menjadi usaha dengan banyak pelanggan loyal. Kami percaya bahwa makanan bukan sekadar rasa, tetapi pengalaman yang menyatukan.
+    </p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Daftar Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Ayam Original">
+        <div class="menu-info">
+          <h3>Ayam Original</h3>
+          <p>Ayam goreng dengan bumbu khas yang gurih dan renyah.</p>
+          <div class="harga">Rp25.000</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1617191511157-91f3c7b4e0a3?auto=format&fit=crop&w=600&q=80" alt="Ayam Pedas">
+        <div class="menu-info">
+          <h3>Ayam Pedas</h3>
+          <p>Ayam goreng dengan sensasi pedas menggigit, cocok untuk pecinta cabai.</p>
+          <div class="harga">Rp27.000</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1600628425985-4f37e646f76c?auto=format&fit=crop&w=600&q=80" alt="Ayam Krispi">
+        <div class="menu-info">
+          <h3>Ayam Krispi</h3>
+          <p>Ayam tepung super renyah di luar, juicy di dalam.</p>
+          <div class="harga">Rp28.000</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1613145996366-b131386e7aa7?auto=format&fit=crop&w=600&q=80" alt="Paket Hemat">
+        <div class="menu-info">
+          <h3>Paket Hemat</h3>
+          <p>Ayam + nasi + es teh manis. Pilihan pas buat kamu yang hemat!</p>
+          <div class="harga">Rp35.000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>📍 Alamat: Jl. Ayam Lezat No.12, Bandung</p>
+    <p>📞 Telepon: 0812-3456-7890</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">Chat Sekarang</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Diandra's Fried Chicken. All rights reserved.
+  </footer>
+
+</body>
+</html>
